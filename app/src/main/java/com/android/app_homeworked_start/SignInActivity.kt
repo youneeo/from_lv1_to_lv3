@@ -32,6 +32,7 @@ class SignInActivity : AppCompatActivity() {
             }
             val intent = Intent(this,HomeActivity::class.java)
             intent.putExtra("id",et_id.text.toString())
+            startActivity(intent)
         }
         btn_sign_up.setOnClickListener {
             val intent = Intent(this, SignUpActivity::class.java)
